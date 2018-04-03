@@ -47,6 +47,10 @@ class ArrayStackTest {
     @Test
     @DisplayName("should remove element from the stack.")
     void pop() {
+        IStack<String> stack = new ArrayStack<>();
+        String element = "element";
+        stack.push(element);
+        assertEquals(element, stack.pop());
 
     }
 
